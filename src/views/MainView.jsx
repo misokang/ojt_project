@@ -4,6 +4,7 @@ import AddForm from "@/components/Post/AddForm.jsx";
 
 const MainView = () => {
     const mode = "R";
+
     return (
         <Fragment>
             {mode === "I" || mode === "U" ? <AddForm /> : null}

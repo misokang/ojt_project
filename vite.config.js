@@ -20,10 +20,10 @@ export default defineConfig({
                 changeOrigin: true,
                 rewrite: (path) => path.replace(/^\/api/, '')
             },
-            '/auth': {
-                target: 'http://localhost:8080/auth', //'http://localhost:8999/auth',
+            '/opeApi': {
+                target: 'https://www.omdbapi.com/', //'http://localhost:8999/auth',
                 changeOrigin: true,
-                rewrite: (path) => path.replace(/^\/auth/, '')
+                rewrite: (path) => path.replace(/^\/opeApi/, '')
             }
         }
     }
