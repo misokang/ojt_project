@@ -1,5 +1,5 @@
 import {Fragment, memo} from "react";
-import SampleList from "@/components/service/Sample/SampleList";
+import SampleList from "@/components/service/Sample/SampleList.jsx";
 
 const SampleView = () => {
     return (
