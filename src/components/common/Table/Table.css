@@ -1,0 +1,255 @@
+
+.ns-table-list {
+    width: 100%;
+}
+
+.k-card-body>div:nth-child(1)>.ns-table-list{
+    margin-top:0 !important;
+}
+
+.ns-table-list .tblList {
+    padding: 30px;
+    border-radius: 5px;
+    border-top: 1px solid rgba(58, 65, 80, 0.3);
+    overflow-y: auto;
+    max-height: calc(100vh - 380px);
+}
+
+.ns-table-list .tblList thead th {
+    text-align: center;
+/*    color: rgba(255, 255, 255, 0.5);*/
+    font-weight: 200;
+}
+
+.ns-table-list .tblList .header {
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+.ns-table-list .tblList .info-wrapper {
+    width: 100%;
+    /*height: 40px;
+    margin-bottom: 10px;*/
+}
+
+.ns-table-list .tblList .info-wrapper .info {
+    display:inline-flex;
+    align-items: center;
+    float: left;
+  /*  line-height: 40px ;*/
+}
+
+.ns-table-list .tblList .info-wrapper .info > strong{
+    /*
+    font-size:15px;
+    font-weight:500;
+    color:#1a1a1a;
+    */
+
+    display:block;
+    margin:0 0 20px 6px;
+}
+
+.ns-table-list .tblList .info-wrapper .info > strong > span{
+    /*font-size:13px;
+    color:#8a96a8;*/
+}
+
+.ns-table-list .tblList .info-wrapper .info > strong > i {
+    display:inline-block;
+    margin:0 5px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.ns-table-list .tblList .info-wrapper .btn-group {
+    float: right;
+}
+
+.ns-table-list .tblList .info-wrapper .btn-group button{
+   /* background:transparent !important;
+    border:1px solid #000c24;
+    opacity:1 !important;*/
+    transition-duration:0.2s;
+}
+.ns-table-list .tblList .info-wrapper .btn-group button span{
+    /*color:#000c24 !important;*/
+}
+
+.ns-table-list .tblList .info-wrapper .btn-group button:hover{
+    /*background:#f6f7fa !important;*/
+}
+
+.ns-table-list .tblList .info-wrapper .btn-group button:active,
+.ns-table-list .tblList .info-wrapper .btn-group button:visited{
+   /* background:#000c24 !important;*/
+}
+.ns-table-list .tblList .info-wrapper .btn-group button:active span,
+.ns-table-list .tblList .info-wrapper .btn-group button:visited span{
+    /*color:#fff !important;*/
+}
+
+.ns-table-list .tblList .header tr > th {
+    height: 25px;
+    display: table-cell;
+    vertical-align: middle !important;
+   /* background: #141414;*/
+    font-size: 15px;
+    /*color: #f6f6f6;*/
+    opacity: 0.5;
+}
+
+.ns-table-list .tblList .k-listview-content >.list-item {
+    height: 59px;
+    position: relative;
+   /* border: 1px solid #3a4150;*/
+    display: table;
+    table-layout: fixed;
+    /*color: #000;*/
+    text-align: center;
+    margin-bottom: 5px;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.ns-table-list .tblList .k-listview-content >.list-item:hover {
+    cursor: pointer;
+    background: rgba(58, 65, 80, 0.5);
+    transition-duration: 0.5s;
+}
+
+.ns-table-list .tblList .list-item.empty {
+    display: table;
+    height: 55px;
+    width: 100%;
+}
+
+.ns-table-list .tblList .list-item.empty > .item {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.ns-table-list .tblList .k-listview-content > .list-item > .item {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 10px;
+    word-break: break-word;
+    /*color: #f6f6f6;*/
+}
+
+.ns-table-list .tblList .k-listview-content > .list-item > .item > ul[role=radiogroup]{
+    justify-content: center;
+}
+
+.ns-table-list .tblList .btnWrap {
+    display:flex;
+    justify-content: right;
+    margin-top:30px;
+}
+
+.ns-table-list .tblList .btnWrap > li {
+    margin-left:10px;
+}
+
+.ns-table-list .btn-group > .k-button {
+    padding: 0 20px;
+}
+
+.ns-table-search {
+    width: 100%;
+}
+
+.ns-table-search .schValue {
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    padding:20px;
+}
+
+.ns-table-search .schValue * {
+    vertical-align: middle;
+}
+.ns-table-search .schValue input[type="text"]{
+    min-width:500px;
+}
+
+.ns-table-search .schValue > ul {
+    display:flex;
+    align-items: end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap:0px 10px;
+}
+.ns-table-search .schValue > ul > li.full{
+    width:100%;
+}
+
+.ns-table-search .schValue > ul > li.full + li{
+    display:flex;
+    align-items: flex-end;
+}
+
+.ns-table-search .schValue > ul > li.full .ns-custom-dropdwonlist + .k-input{
+    min-width:calc(100% - 170px);
+}
+.ns-table-search .schValue > ul > li.full .ns-custom-dropdwonlist + * + .k-input{
+    min-width:calc(100% - 340px);
+}
+.ns-table-search .schValue > ul > li.full .k-input{
+    min-width:100%;
+}
+
+.ns-table-search .schValue > ul > li {
+    padding: 0;
+    border: 0;
+    float: left;
+}
+
+.ns-table-search .schValue > ul > li > button{
+    color:#fff;
+    font-size:15px;
+    font-weight:500;
+    border:0px;
+    border-radius:6px;
+    height:40px;
+    padding:0px 20px;
+    background:#000c24;
+    box-shadow:none !important;
+}
+.ns-table-search .schValue > ul > li > button:hover{
+    background:#00b4b4;
+}
+
+.ns-table-search .schValue > ul > li > button > span{
+    color:#fff;
+}
+
+.ns-table-search .schValue > ul > li > p {
+    font-size: 13px;
+    margin: 0 0 5px 3px;
+    font-weight: 500;
+    color:#8a96a8;
+}
+
+.ns-table-search .schValue a.sch {
+    margin-left:20px;
+}
+
+.ns-table-search .schValue .btn {
+    margin-right:10px;
+}
+
+.ns-table-search .schValue .btn .sch {
+    margin-left:20px;
+    height:40px;
+}
+
+.ns-custom-dropdwonlist + .ns-custom-dropdwonlist{
+    margin-left:15px;
+}
+

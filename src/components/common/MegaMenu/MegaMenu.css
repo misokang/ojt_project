@@ -1,0 +1,233 @@
+
+
+.ns-mega-menu > .ns-menu-container {
+    position: relative;
+    display: flex;
+    height: 70px;
+    background: #161719;
+    z-index: 6;
+    transition-duration: 0.3s;
+    overflow: hidden;
+}
+
+/* Dropdown Menu */
+.ns-mega-menu > .ns-menu-container.open {
+    height: 300px;
+}
+
+.ns-mega-menu > .ns-menu-container.close {
+    transition-duration: 0s;
+    height: 70px;
+}
+
+/* Dropdown Menu Logo*/
+.ns-mega-menu > .ns-menu-container::after {
+    content: "";
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    display: block;
+    width: 100%;
+    height: 364px;
+    background: #161719 url('@/images/roadmaster_menu_logo.png') bottom 15px right 26px no-repeat;
+    /*background: #161719 url('@/images/menu_logo.png') bottom 15px right 26px no-repeat;*/
+    /*background: #161719 url('@/images/sense_menu_logo.png') bottom 15px right 26px no-repeat;*/
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.16);
+    background-size: 23%;
+    z-index: 2;
+}
+
+/* left center right Items*/
+.ns-mega-menu > .ns-menu-container > .ns-menu-items {
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    padding: 0 25px 0 75px;
+    transition-duration: 0.3s;
+    background: #1e1f23;
+    flex: 1;
+}
+
+.ns-mega-menu > .ns-menu-container > .ns-menu-items > li {
+    position: relative;
+    z-index: 3;
+    height: 70px;
+    align-items: center;
+    display: flex;
+}
+
+.ns-mega-menu > .ns-menu-container > .ns-menu-items > .mega-left-item {
+    justify-content: flex-start;
+    flex-grow: 1;
+
+}
+
+.ns-mega-menu > .ns-menu-container > .ns-menu-items > .mega-center-item {
+    justify-content: center;
+    flex-grow: 2;
+}
+
+.ns-mega-menu > .ns-menu-container > .ns-menu-items > .mega-right-item {
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+/**/
+
+/* MenuList dept 0 */
+.ns-mega-menu > .ns-menu-container > .ns-menu-items > li .ns-menu-list-dept-0 {
+    position: relative;
+    display: flex;
+    height: 70px;
+    width: 100%;
+    transition-duration: 0.3s;
+
+}
+
+.ns-mega-menu > .ns-menu-container > .ns-menu-items > li .ns-menu-list-dept-0 > li {
+    position: relative;
+    z-index: 3;
+    height: 70px;
+    align-items: center;
+    min-width: 10vw;
+    max-width: 12vw;
+    margin-right: 4.5vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.ns-mega-menu > .ns-menu-container > .ns-menu-items > li .ns-menu-list-dept-0 > li > a {
+    position: relative;
+    display: block;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+    font-size: 17px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.ns-mega-menu > .ns-menu-container > .ns-menu-items > li .ns-menu-list-dept-0 > li > a::after {
+    content: "";
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background: #ff0b47;
+    transition-duration: 0.3s;
+    transform: scaleX(0);
+}
+
+.ns-mega-menu > .ns-menu-container > .ns-menu-items > li .ns-menu-list-dept-0 > li:hover > a::after {
+    transform: scaleX(1);
+}
+/**/
+
+/* MenuList dept 1 */
+.ns-mega-menu > .ns-menu-container > .ns-menu-items > li .ns-menu-list-dept-1 {
+    position: absolute;
+    top: 76px;
+}
+
+.ns-mega-menu > .ns-menu-container > .ns-menu-items > li .ns-menu-list-dept-1 > li {
+    position: relative;
+}
+
+.ns-mega-menu > .ns-menu-container > .ns-menu-items > li .ns-menu-list-dept-1 > li > a > strong {
+    position: relative;
+    display: block;
+    font-weight: 600;
+    color: #f6f6f6;
+    margin: 20px 0px 5px;
+    font-size: 15px;
+}
+
+.ns-mega-menu > .ns-menu-container > .ns-menu-items > li .ns-menu-list-dept-1 > li > a > strong::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -17px;
+    display: block;
+    width: 10px;
+    height: 13px;
+    background: url('@/images/menu_hover.png') no-repeat;
+    transform: translateX(-50%);
+    transition-duration: 0.2s;
+    opacity: 0;
+}
+
+.ns-mega-menu > .ns-menu-container > .ns-menu-items > li .ns-menu-list-dept-1 > li > a > strong:hover::after {
+    transform: translateX(0%);
+    opacity: 1;
+}
+/**/
+
+/* MenuList dept 2 */
+.ns-mega-menu > .ns-menu-container > .ns-menu-items > li .ns-menu-list-dept-2 {
+    padding-left: 10px;
+}
+
+.ns-mega-menu > .ns-menu-container > .ns-menu-items > li .ns-menu-list-dept-2 li > a > span {
+    position: relative;
+    display: block;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 2px 0px;
+}
+
+/* dept2 커서 이벤트 */
+/*.ns-mega-menu > .ns-menu-container > .ns-menu-items > li .ns-menu-list-dept-2 li > a > span::after {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    top: 2px;*/
+/*    left: -17px;*/
+/*    display: block;*/
+/*    width: 10px;*/
+/*    height: 13px;*/
+/*    background: url('@/images/menu_hover.png') no-repeat;*/
+/*    transform: translateX(-50%);*/
+/*    transition-duration: 0.2s;*/
+/*    opacity: 0;*/
+/*}*/
+
+/*.ns-mega-menu > .ns-menu-container > .ns-menu-items > li .ns-menu-list-dept-2 li > a > span:hover::after {*/
+/*    transform: translateX(0%);*/
+/*    opacity: 1;*/
+/*}*/
+
+/**/
+
+
+/* MegaMenu 현재 페이지 표시 1 */
+.ns-mega-menu > .ns-menu-container > .ns-menu-items > li .ns-menu-list-dept-0 > li.now > a::after {
+    content: "";
+    position: absolute;
+    top: 69px;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background: #ff0b47;
+    transform: scaleX(1);
+}
+
+/* MegaMenu 현재 페이지 표시 2 */
+.ns-mega-menu > .ns-menu-container > .ns-menu-items > li .ns-menu-list-dept-0 > li.now > .ns-menu-list-dept-1 li.now > a > strong.now::after {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+/* MegaMenu 현재 페이지 표시 3 */
+.ns-mega-menu > .ns-menu-container > .ns-menu-items > li .ns-menu-list-dept-0 > li.now > .ns-menu-list-dept-1 > li.now > .ns-menu-list-dept-2 li.now > a > span.now {
+    /* 추후 변경 */
+    color: #ff0b47;
+}
+
+
+.ns-mega-menu>.ns-menu-container>.ns-menu-items>li .ns-menu-list-dept-2 li>a>span,
+.ns-mega-menu>.ns-menu-container>.ns-menu-items>li .ns-menu-list-dept-1>li>a>strong {
+    white-space:nowrap;
+}

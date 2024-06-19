@@ -1,0 +1,311 @@
+
+
+.ns-grid-editor {
+    width: 100%;
+}
+
+.ns-grid-editor .header {
+    background: #141414 !important;
+    border-color: #141414;
+    font-size: 15px;
+    height: 50px;
+}
+
+.ns-grid-editor .header > th {
+    color: #f6f6f6;
+    opacity: 0.5;
+    font-size: 15px;
+}
+
+.ns-grid-editor .tr
+{
+    display:table-row;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.ns-grid-editor .td .k-colorpicker{
+    min-width:auto;
+}
+
+.ns-grid-editor .td,
+.ns-grid-editor .th
+{
+    display:table-cell;
+    vertical-align: inherit;
+    font-weight: 400;
+}
+
+
+
+.ns-grid-editor tbody:before{
+    content: "";
+    display: block;
+    line-height: 5px;
+    color: transparent;
+}
+
+.ns-grid-editor > .grid-table {
+    width: 100%;
+    vertical-align: middle;
+    border-collapse: separate;
+    border-spacing: 0 5px;
+    display:table;
+    table-layout: fixed;
+}
+
+
+.ns-grid-editor > .grid-table .td {
+    display:table-cell;
+    text-align: center;
+    word-break: break-all;
+    border-top: 1px solid #3a4150;
+    border-bottom: 1px solid #3a4150;
+    height: 55px;
+    vertical-align: middle;
+    color: #f6f6f6;
+    padding: 0 5px;
+    font-size: 15px;
+}
+
+.ns-grid-editor > .grid-table td.show:nth-child(2n) {
+    border-left: 1px solid #3a4150;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+
+.ns-grid-editor > .grid-table .td:last-child {
+    border-right: 1px solid #3a4150;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+
+.ns-grid-editor > .grid-table .tr > th > .plusBtn{
+    width: 35px;
+    height: 35px;
+    /*background:url('../../images/table_btn_plus_h.png') no-repeat;*/
+    font-size: 0px;
+    display: block;
+}
+
+.ns-grid-editor > .grid-table .tr > th >.plusBtn:hover{
+    width: 35px;
+    height: 35px;
+    /*background:url('../../images/table_btn_plus_ph.png') no-repeat;*/
+    font-size: 0px;
+    display: block;
+}
+
+.ns-grid-editor > .grid-table .plusBtn {
+    width: 35px;
+    height: 35px;
+    /*background:url('../../images/table_btn_plus.png') no-repeat;*/
+    font-size: 0px;
+    display: block;
+}
+
+.ns-grid-editor > .grid-table  .saveBtn {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+    font-size: 0px;
+    background: rgba(58, 65, 80, 0.6) url(@/assets/images/save.png)center center no-repeat;
+}
+
+.ns-grid-editor > .grid-table .saveBtn:hover {
+    /*background:url('../../images/btn_save_s.png') no-repeat;*/
+    opacity: 0.7;
+}
+
+.ns-grid-editor > .grid-table .cancelBtn {
+    /*margin-right: 10px;*/
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+    font-size: 0px;
+    background: rgba(58, 65, 80, 0.6) url(../../images/can.png)center center no-repeat;
+}
+
+.ns-grid-editor > .grid-table .cancelBtn:hover {;
+    /*background:url('../../images/btn_close_s.png') no-repeat;*/
+    opacity: 0.7;
+}
+
+.ns-grid-editor > .grid-table .modBtn {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+    font-size: 0px;
+    background: rgba(58, 65, 80, 0.6) url(../../images/edit.png)center center no-repeat;
+}
+
+.ns-grid-editor > .grid-table .modBtn:hover {
+    /*background:url('../../images/btn_modify_.png') no-repeat;*/
+    opacity: 0.7;
+}
+
+.ns-grid-editor > .grid-table .delBtn{
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+    font-size: 0px;
+    background: rgba(58, 65, 80, 0.6) url(../../images/del.png)center center no-repeat;
+    display: block;
+}
+
+.ns-grid-editor > .grid-table .delBtn:hover {
+    /*background:url('../../images/btn_del_s.png') no-repeat;*/
+    opacity: 0.7;
+}
+
+.ns-grid-editor .ns-file-upload .k-combobox {
+    width: 100%;
+}
+
+.ns-grid-custom-editor {
+    width: 100%;
+}
+
+.ns-grid-custom-editor .tr
+{
+    display:table-row;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.ns-grid-custom-editor .td,
+.ns-grid-custom-editor .th
+{
+    display:table-cell;
+    vertical-align: inherit;
+}
+
+.ns-grid-custom-editor > .grid-table {
+    width: 100%;
+    vertical-align: middle;
+    border-collapse: separate;
+    border-spacing: 0 5px;
+    display:table;
+}
+
+
+.ns-grid-custom-editor > .grid-table > tbody > tr.tr td{
+    padding: 0px 5px 10px 5px;
+}
+
+.ns-grid-custom-editor > .grid-table thead{
+    line-height:40px;
+    background:#fbfbfb;
+    color:rgba(23, 35, 85,0.5);
+    font-size:1.3rem;
+    font-weight:500;
+    border-radius:10px;
+}
+
+.ns-grid-custom-editor > .grid-table .td {
+    display:table-cell;
+    padding : 10px 5px;
+    text-align: center;
+}
+
+.ns-grid-custom-editor .th{
+    font-size: 1.3rem;
+    color: rgba(23, 35, 85,0.5);
+    font-weight: 400;
+}
+.ns-grid-custom-editor > .grid-table .td .k-textbox
+,.ns-grid-custom-editor > .grid-table .td .k-widget.k-datepicker{
+    width:100%;
+}
+
+.ns-grid-custom-editor > .grid-table .td .k-widget.k-numerictextbox input{
+    text-align: right;
+}
+
+.ns-grid-custom-editor > .grid-table .tr {
+    display:table-row;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.ns-grid-custom-editor > .grid-table .tr td{
+    padding-bottom: 10px;
+}
+
+/*
+.ns-grid-custom-editor > .grid-table .tr:not(.add):not(:last-child) {
+    border-bottom: 1px solid #eaeef4;
+}
+*/
+
+.ns-grid-custom-editor > .grid-table .tr > th > .plusBtn{
+    background:url('../../images/save.png') no-repeat;
+}
+
+.ns-grid-custom-editor > .grid-table .tr > th > .plusBtn:hover{
+    /*background:url('../../images/table_btn_plus_ph.png') no-repeat;*/
+}
+
+.ns-grid-custom-editor > .grid-table .plusBtn {
+    width: 35px;
+    height: 35px;
+    /*background:url('../../images/table_btn_plus.png') no-repeat;*/
+    font-size: 0px;
+    display: block;
+}
+
+.ns-grid-custom-editor > .grid-table  .saveBtn {
+    font-size:0px;
+    display:block;
+    width:35px;
+    height:35px;
+    /*background:url('../../images/btn_save.png') no-repeat;*/
+}
+
+.ns-grid-custom-editor > .grid-table .saveBtn:hover {
+    /*background:url('../../images') no-repeat;*/
+}
+
+.ns-grid-custom-editor > .grid-table .cancelBtn {
+    font-size:0px;
+    display:block;
+    width:35px;
+    height:35px;
+    /*background:url('../../images/btn_close.png') no-repeat;*/
+}
+
+.ns-grid-custom-editor > .grid-table .cancelBtn:hover {;
+    /*background:url('../../images/btn_close_s.png') no-repeat;*/
+}
+
+.ns-grid-custom-editor > .grid-table .modBtn {
+    font-size:0px;
+    display:block;
+    width:35px;
+    height:35px;
+    /*background:url('../../images/btn_modify.png') no-repeat;*/
+}
+
+.ns-grid-custom-editor > .grid-table .modBtn:hover {
+    /*background:url('../../images/btn_modify_s.png') no-repeat;*/
+}
+
+.ns-grid-custom-editor > .grid-table .delBtn{
+    width:35px;
+    height:35px;
+    font-size:0px;
+    /*background:url('../../images/btn_del.png') no-repeat;*/
+    display: block;
+}
+
+.ns-grid-custom-editor > .grid-table .delBtn:hover {
+    /*background:url('../../images/btn_del_s.png') no-repeat;*/
+}
+
+.ns-grid-custom-editor .ns-file-upload .k-combobox {
+    width: 100%;
+}

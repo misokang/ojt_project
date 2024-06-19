@@ -1,0 +1,54 @@
+
+
+.ns-post-search-input {
+    width: 100%;
+}
+
+.ns-post-search-input > input {
+    text-align: center;
+}
+
+.ns-post-search-input .k-textbox {
+    border-radius: 10px;
+    height: 40px;
+    border: 1px solid #CCD1DA;
+    font-size: 1.5rem;
+    padding: 0 20px;
+    box-sizing: border-box;
+    transition-duration: .3s;
+    background: url(../../images/address_n.png) no-repeat center right 15px, #fff;
+}
+
+.ns-post-search-input .k-textbox:hover,
+.ns-post-search-input .k-textbox:focus,
+.ns-post-search-input .k-textbox:active {
+    border: 1px solid #0071F9;
+    transition-duration: .3s;
+    background: url(../../images/address_s.png) no-repeat center right 15px, #fff
+}
+
+.ns-post-search-input .k-textbox.k-state-focused {
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+
+.popup-wrapper-postcode {
+    border : 1px solid rgba(0, 113, 249, 0.7);
+    border-top-width: 0;
+}
+
+.popup-wrapper-postcode .cancelBtn {
+    font-size:0px;
+    display:inline-block;
+    width:35px;
+    height:35px;
+    background:url('../../images/btn_close.png') no-repeat;
+}
+
+.popup-wrapper-postcode .cancelBtn:hover {
+    font-size:0px;
+    display:inline-block;
+    width:35px;
+    height:35px;
+    background:url('../../images/btn_close_s.png') no-repeat;
+}

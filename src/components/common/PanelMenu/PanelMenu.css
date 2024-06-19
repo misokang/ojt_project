@@ -1,0 +1,30 @@
+
+
+.lv0 > .k-link {
+    height: 40px !important;
+    font-weight: bold !important;
+    border-bottom : 1px solid #ddd;
+}
+
+.lv1 > .k-link {
+    height: 35px !important;
+    font-weight: bold;
+    padding-left : 15px !important;
+    border-bottom : 1px solid #ddd;
+}
+
+.lv2 > .k-link {
+    height: 35px !important;
+    padding-left : 30px !important;
+    border-bottom : 1px solid #ddd;
+}
+
+.lv3 > .k-link {
+    height: 35px !important;
+    padding-left : 45px !important;
+    border-bottom : 1px solid #ddd;
+}
+
+.k-item {
+    margin: 0;
+}
