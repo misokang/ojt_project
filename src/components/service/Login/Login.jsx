@@ -19,11 +19,14 @@ const Login = () => {
     })
 
     async function doLogin() {
-        const publicKey = await ServiceApi.common.reqGetPublicKey()
+        //let id = formData.emplId, pwd = formData.pwd;
+        //const publicKey = await ServiceApi.common.reqGetPublicKey(id, pwd);
+        const publicKey = await ServiceApi.common.reqGetPublicKey();
         if (util.apiValidationCheck(publicKey)) {
             const encryptPwd = util.encryptText(publicKey.item.publicKey, formData.pwd)
 
             const result = await ServiceApi.login.reqPostLoginInfo(formData.emplId, encryptPwd)
+           // const result = await ServiceApi.login.reqPostLoginInfo(formData.emplId, pwd);
             if (util.apiValidationCheck(result)) {
                 localStorage.setItem("refreshToken", result.item.refreshToken);
                 cookies.set("isLogin", true, {path: "/"});
@@ -32,7 +35,8 @@ const Login = () => {
                     ...result.item
                 }))
 
-                navigate("/operator", {replace: true})
+                 navigate("/operator", {replace: true})
+                // navigate("/board", {replace: true})
             }
         }
     }

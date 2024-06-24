@@ -17,10 +17,8 @@ axios.interceptors.response.use(function (response) {
             return axios.request(config);    // api 재조회
         }
     }
-
     return response;
 }, function (error) {
-
 })
 
 export default {

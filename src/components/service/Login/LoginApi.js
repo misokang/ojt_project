@@ -7,8 +7,10 @@ export const login = {
             id: emplId,
             password: pwd
         }
-        return axios.post("/api/v1/login", params)
+        // return axios.post("/api/v1/login", params)
+        return axios.post("/api/auth/login.do", params)
             .then((res) => {
+                console.log("axios post return res", res);
                 return res.data;
             })
             .catch((err) => {

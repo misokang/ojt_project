@@ -9,9 +9,11 @@ export const common = {
         }
         return axios.post("/api/v1/public-key", params)
             .then((res) => {
+                console.log("common.res : ", res);
                 return res.data;
             })
             .catch((err) => {
+                console.log("common.res.err ", err);
                 return err.response.data.message;
             });
     }
