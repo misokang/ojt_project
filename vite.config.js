@@ -1,7 +1,7 @@
 import {defineConfig} from 'vite'
 import {resolve} from 'path'
 import react from "@vitejs/plugin-react";
-
+import { resolve } from 'path'
 export default defineConfig({
     // logLevel: 'info', 
     // logLevel: "debug" ,
@@ -14,6 +14,12 @@ export default defineConfig({
         alias: [
             {find:'@', replacement: resolve(__dirname, './src')}
         ],
+
+        root: resolve(__dirname, 'src'),
+        build: {
+            outDir: '../dist'
+        },
+        
     },
     server: {
         proxy: {
@@ -66,7 +72,8 @@ export default defineConfig({
                 changeOrigin: true,
                 // rewrite: (path) => path.replace(/^\/boardApi/, ''),
             },
-
+          
+            
                 
 
 

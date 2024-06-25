@@ -1,0 +1,27 @@
+/* App.css 파일에 추가하거나 인라인 스타일로 사용 */
+
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 화면 전체 높이 */
+}
+
+.table-wrapper {
+  display: grid;
+  place-items: center;
+  width: 80%; /* 테이블 너비를 80%로 설정 */
+  margin: 0 auto; /* 중앙 정렬 */
+}
+
+table {
+  margin-left: auto; /* 부모 요소의 너비에 맞춤 */
+  margin-right:auto;
+}
+
+table,td,th {
+  border-collapse: collapse;
+  border: 1px solid black;
+}

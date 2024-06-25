@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
+import * as bootstrap from 'bootstrap'
 
 /* 기본 contextAPI 컴포넌트 */
 import {ModalProvider} from '@/components/common/Context/Modal';

@@ -10,6 +10,8 @@ import {Cookies} from "react-cookie";
 import MainView from "@/views/MainView.jsx";
 import AddForm from "./components/Post/AddForm";
 import BoardView from "./views/Board/boardView";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import BoardDetail from "./views/Board/BoardDetail.jsx";
 function App() {
     // const auth = useSelector((store) => store.auth);
     const cookies = new Cookies();
@@ -28,6 +30,7 @@ function App() {
                 <Route path={'/sample'} element={<SampleView/>}/>
                 <Route path={'/operator'} element={<OperatorDetailView/>}/>
                 <Route path={'/board'} element={<BoardView/>}/>
+                <Route path={'/boardDetail'} element={<BoardDetail/>}/>
                 </Routes>
             </BrowserRouter>
         </Fragment>
